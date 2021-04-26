@@ -22,3 +22,7 @@ Prerequisites
 
 https://miro.com/app/board/o9J_lJdURAU=/
 
+Thumbnail
+Content to be promoted
+Title and music
+follow a template for the video

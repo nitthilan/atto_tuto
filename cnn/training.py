@@ -87,12 +87,6 @@ class model(pl.LightningModule):
         logits = self.forward(x)
         # print("Output ", y, logits)
         loss = self.loss(logits,y)
-        softmax = torch.exp(output).cpu()
-        prob = list(softmax.numpy())
-        predictions = np.argmax(prob, axis=1)
-
-		# accuracy on training set
-        accuracy_score(train_y, predictions)
         return loss
     
     def validation_step(self, valid_batch, batch_idx):
